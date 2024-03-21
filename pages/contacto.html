@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,26 +19,41 @@
 </head>
 <body>
     <header class="headerIndex">
-        <div class="logo">
-            <a href="../index.html"><img src="../assets/img/logoSolo.png" alt="Logo de mi sitio web"></a>
-            <hr> <!-- linea entre la imagen y el nombre-->
-            <div>
-                <h1>FAB</h1>
-                <h3>ALTOS DEL MOLLE</h3>
+        <!-- barra de navegación con bootstrap -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="logo">
+                    <a href="../index.html"><img src="../assets/img/logoSolo.png" alt="Logo de mi sitio web"></a>
+                    <hr> <!-- linea entre la imagen y el nombre-->
+                    <div>
+                        <h1>FAB</h1>
+                        <h3>ALTOS DEL MOLLE</h3>
+                    </div>
+                </div>
+                <!-- NO ESTOY PUDIENDO CAMBIAR LOS COLORES DE LAS LINEAS DE ADENTRO -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobreNosotros.html">SOBRE NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">SERVICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./novedades.html">NOVEDADES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <nav>
-            <ul class="navBar">
-                <li><a href="../index.html">INICIO</a></li>
-                <hr>
-                <li><a href="./sobreNosotros.html">SOBRE NOSOTROS</a></li>
-                <hr>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
-                <hr>
-                <li><a href="./novedades.html">NOVEDADES</a></li>
-                <hr>
-                <li><a href="#">CONTACTO</a></li>
-            </ul>
         </nav>
     </header>
     
@@ -48,6 +63,7 @@
                 <h2>Contactanos</h2>
             </div>
         </section>
+
         <section class="form">
             <hr>
             <form action="">

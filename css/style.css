@@ -13,16 +13,18 @@ body {
 }
 /* ------------------------------THE HEADER STARTS HERE------------------------------*/
 /* -----------ENCABEZADO DE TODAS LAS PAGINAS----------- */
-.headerIndex {
-   display: flex;
-   flex-direction: column;
-   background-color: #557174;
-   width: 100%;
-   height: 52vh;
-   align-items: center; /*alineo la barra de paginas al centro*/
-   }
 
-/* INICIO de diseño del logo en el encabezado */
+.navbar{
+   margin-top: 0; /* Establece el margen superior del navbar a 0 */
+   padding-top: 0; /* Establece el relleno superior del navbar a 0 */
+}
+
+.container-fluid{
+   display: flex;
+   background-color: #557174;
+}
+
+/* INICIO de diseño del logo en el encab  ezado */
 .logo {
    display: flex;
 }
@@ -32,7 +34,7 @@ body {
    height: 100px;
 }
 
-.logo hr { /* linea entre la imagen y el nombre */
+.logo hr {
    height: 75px;
    margin-right: 10px;
    align-self: center;
@@ -60,36 +62,14 @@ body {
    margin-top: -10px;
 }
 /* FIN de diseño logo de encabezado */
-/* INICIO de paginas */
-.headerIndex nav{
-   display: flex;
-}
 
-.navBar {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   list-style-type: none;
-}
-
-.navBar li {
-   margin: 7px;
-}
-
-.navBar li a {
+.nav-link{
    color: #F7F7E8;
    text-decoration: none;
    font-family: 'DM Serif Display', sans-serif;
    font-size: 20px;
 }
 
-.navBar hr {
-   border: none;
-   border-top: 1.5px solid #F7F7E8;
-   width: 100%;
-}
-/* FIN de paginas */
 /* ------------------------------THE HEADER FINISH HERE------------------------------*/
 /* ------------------------------THE MAIN STARTS HERE------------------------------*/
 .banner {
@@ -97,14 +77,6 @@ body {
    align-items: center;
    justify-content: space-evenly;
    z-index: 999; /* esto lo puse para que el control del videos de novedades  no se superponga al indice */
-}
-
-.banner2{
-   display: none;
-}
-
-.banner3{
-   display: none;
 }
 
 .banner img {
@@ -283,7 +255,7 @@ h2 {
 
 .footerRedes div img {
    width: 50px;
-   height: 40px;
+   height: 40px; 
 }
 
 /* ---------------SOBRE NOSOSTROS---------------- */

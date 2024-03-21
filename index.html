@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,34 +19,70 @@
 </head>
 <body>
     <header class="headerIndex">
-            <div class="logo">
-                <img src="./assets/img/logoSolo.png" alt="">
-                <hr> <!-- linea entre la imagen y el nombre-->
-                <div>
-                    <h1>FAB</h1>
-                    <h3>ALTOS DEL MOLLE</h3>
+            <!-- barra de navegación con bootstrap -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <div class="logo">
+                        <img src="./assets/img/logoSolo.png" alt="">
+                        <hr> <!-- linea entre la imagen y el nombre-->
+                        <div>
+                            <h1>FAB</h1>
+                            <h3>ALTOS DEL MOLLE</h3>
+                        </div>
+                    </div>
+                    <!-- NO ESTOY PUDIENDO CAMBIAR LOS COLORES DE LAS LINEAS DE ADENTRO -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/sobreNosotros.html">SOBRE NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/servicios.html">SERVICIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/novedades.html">NOVEDADES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <nav>
-                <ul class="navBar">
-                    <li><a href="#">INICIO</a></li>
-                    <hr>
-                    <li><a href="../proyecto_final/pages/sobreNosotros.html">SOBRE NOSOTROS</a></li>
-                    <hr>
-                    <li><a href="../proyecto_final/pages/servicios.html">SERVICIOS</a></li>
-                    <hr>
-                    <li><a href="../proyecto_final/pages/novedades.html">NOVEDADES</a></li>
-                    <hr>
-                    <li><a href="../proyecto_final/pages/contacto.html">CONTACTO</a></li>
-                </ul>
             </nav>
     </header>
 
     <main>
         <section class="banner">
-            <img class="banner1" src="../proyecto_final/assets/img/Banner1_index.jpeg" alt="">
-            <img class="banner2" src="../proyecto_final/assets/img/Banner2_index.jpeg" alt="">
-            <img class="banner3" src="../proyecto_final/assets/img/Banner3_index.jpeg" alt="">
+            <!-- importe el carrusel Crossfade de boostrap -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/img/Banner1_index.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/Banner2_index.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/img/Banner3_index.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
         </section>
 
         <section class="sectionServ">
@@ -132,24 +168,25 @@
         <section class="footer">
             <section class="logoFooter">
                 <div class="logoPie">
-                    <img src="../proyecto_final/assets/img/logo_pieSolo.png" alt="">
+                    <img src="./assets/img/logo_pieSolo.png" alt="">
                     <div>
                         <h1>FAB</h1>
                         <h3>ALTOS DEL MOLLE</h3>
                     </div>
                 </div>
             </section>
-  
+
             <section class="footerRedes">
                 <div>
-                    <a href="https://www.instagram.com/" target="_blank"><img src="../proyecto_final/assets/img/Instagram_pie.png" alt=""></a>
-                    <a href="https://twitter.com" target="_blank"><img src="../proyecto_final/assets/img/TwitterX_pie.png" alt=""></a>
-                    <a href="https://facebook.com" target="_blank"><img src="../proyecto_final/assets/img/Facebook_pie.png" alt=""></a>
-                    <a href="https://gmail.com" target="_blank"><img src="../proyecto_final/assets/img/Gmail Logo_pie.png" alt=""></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/Instagram_pie.png" alt=""></a>
+                    <a href="https://twitter.com" target="_blank"><img src="./assets/img/TwitterX_pie.png" alt=""></a>
+                    <a href="https://facebook.com" target="_blank"><img src="./assets/img/Facebook_pie.png" alt=""></a>
+                    <a href="https://gmail.com" target="_blank"><img src="./assets/img/Gmail Logo_pie.png" alt=""></a>
                 </div>
             </section>
         </section>
     </footer>
+
 
     <!-- etiqueta script del boostrap que nos sirve para llamar código JS al proyecto -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
