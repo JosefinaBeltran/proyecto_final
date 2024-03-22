@@ -24,7 +24,6 @@
                 <div class="container-fluid">
                     <div class="logo">
                         <img src="./assets/img/logoSolo.png" alt="">
-                        <hr> <!-- linea entre la imagen y el nombre-->
                         <div>
                             <h1>FAB</h1>
                             <h3>ALTOS DEL MOLLE</h3>
@@ -35,7 +34,7 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">INICIO</a>
                             </li>
@@ -87,36 +86,31 @@
 
         <section class="sectionServ">
             <h2>Servicios Destacados</h2>
+            <!-- el contenedor en la medida 768 hasta 1023 utilizamos grid-->
             <section class="contenedorServ">
-                <article class="serv">
+                <article id="venta" class="serv">
                     <div>
                         <img src="./assets/img/Venta_servicio.jpg" alt="">
                     </div>
                     <h4>Venta y Asesoramiento</h4>
                 </article>
-                <article class="serv">
+                <article id="cria" class="serv">
                     <div>
                         <img src="./assets/img/cria_servicio.png" alt="">
                     </div>
-                    <div>
-                        <h4>Cria</h4>
-                    </div>
+                    <h4>Cria</h4>
                 </article>
-                <article class="serv">
+                <article id="doma" class="serv">
                     <div>
                         <img src="./assets/img/doma_servicio.jpg" alt="">
                     </div>
-                    <div>
-                        <h4>Doma</h4>
-                    </div>
+                    <h4>Doma</h4>
                 </article>
-                <article class="serv">
+                <article id="entrenamiento" class="serv">
                     <div>
                         <img src="./assets/img/entrenamiento_servicio.png" alt="">
                     </div>
-                    <div>
-                        <h4>Entrenamiento</h4>
-                    </div>
+                    <h4>Entrenamiento</h4>
                 </article>
             </section>
         </section>
@@ -124,8 +118,8 @@
         <section class="sectionTest">
             <h2>Testimonios</h2>
             <section class="contenedorTest">
-                <div class="test">
-                    <h5>Marta Sanchez</h5>
+                <div id="test1" class="test">
+                    <h5>Gloria Peirotti</h5>
                     <div class="estrellas">
                         <img src="./assets/img/estrella.png" alt="">
                         <img src="./assets/img/estrella.png" alt="">
@@ -136,7 +130,7 @@
                     <p>"El entrenamiento que FAB proporcionó a mi caballo fue excepcional. Vimos mejoras significativas en su comportamiento y rendimiento en muy poco tiempo. ¡Altamente recomendado!"</p>
                 </div>
 
-                <div class="test">
+                <div id="test2" class="test">
                     <h5>Gonzalo Beltrán</h5>
                     <div class="estrellas">
                         <img src="./assets/img/estrella.png" alt="">
@@ -148,7 +142,7 @@
                     <p>"La crianza de caballos con FAB superó mis expectativas. Sus instalaciones y atención al detalle resultaron en crías fuertes y saludables. ¡Una experiencia excelente!"</p>
                 </div>
 
-                <div class="test">
+                <div id="test3" class="test">
                     <h5>Hernan Peirotti</h5>
                     <div class="estrellas">
                         <img src="./assets/img/estrella.png" alt="">
@@ -186,7 +180,6 @@
             </section>
         </section>
     </footer>
-
 
     <!-- etiqueta script del boostrap que nos sirve para llamar código JS al proyecto -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

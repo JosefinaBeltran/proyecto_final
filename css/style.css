@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
+/* Todo el proyecto tiene mobile first pero con las paginas que podes probar
+el responsive son con la pagina INICIO y SOBRE NOSOTROS */
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+   margin: 0; /* elimina el predeterminado de los navegadores, en este caso el margen */
+   padding: 0; /* elimina el predeterminado de los navegadores, en este caso el patio intrno */
+   box-sizing: border-box; /* los elementos dentro de mi pantalla, intenta que los elementos no se desborden */
 }
 
 /* fondo del proyeto */
@@ -13,10 +15,15 @@ body {
 }
 /* ------------------------------THE HEADER STARTS HERE------------------------------*/
 /* -----------ENCABEZADO DE TODAS LAS PAGINAS----------- */
+.headerIndex{
+   position: sticky; /* esto es para que el indice me siga mientras me deslizo hacia habajoen mi pagina web*/
+   top: 0px;
+   z-index: 1000; /* esto lo puse para que el control del videos de novedades  no se superponga al indice */
+}
 
 .navbar{
-   margin-top: 0; /* Establece el margen superior del navbar a 0 */
-   padding-top: 0; /* Establece el relleno superior del navbar a 0 */
+   margin: 0; /* Establece el margen superior del navbar a 0 */
+   padding: 0; /* Establece el relleno superior del navbar a 0 */
 }
 
 .container-fluid{
@@ -30,14 +37,8 @@ body {
 }
 
 .logo img {
-   width: 100px;
-   height: 100px;
-}
-
-.logo hr {
-   height: 75px;
-   margin-right: 10px;
-   align-self: center;
+   width: 110px;
+   height: 110px;
 }
 
 .logo div {
@@ -51,14 +52,14 @@ body {
    color: #F7F7E8;
    font-family: 'DM Serif Display', sans-serif;
    font-weight: lighter;
-   font-size: 40px;
+   font-size: 45px;
 }
 
 .logo div h3 {
    color: #F7F7E8;
    font-family: 'DM Serif Display', sans-serif;
    font-weight: lighter;
-   font-size: 10px;
+   font-size: 13px;
    margin-top: -10px;
 }
 /* FIN de diseño logo de encabezado */
@@ -556,30 +557,200 @@ h2 {
 
 /* Para dispositivos con pantallas pequeñas, como los teléfonos, en modo horizontal */
 @media (min-width: 480px) {
-
+   /* Pagina inicio no necesita cambios */
 }
 
 /* Tabletas pequeñas, en modo vertical */
 @media (min-width: 600px) {
-
+   /* Pagina inicio no necesita cambios */
 }
 
 /* Tabletas de diez pulgadas, en modo vertica */
-@media (max-width: 768px) and (min-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
+   /* servicios de la pagina inicial */
+   .contenedorServ{
+      display: grid;
+      /* declaramos filas y columnas de grid, sino no funciona */
+      grid-template-columns: repeat(2, 6fr); /*max son 12 columnas, fr es una medida llamada fraction*/
+      grid-template-rows: repeat(2, 235px) ; /*infinitas*/
+      grid-template-areas: 
+      "serv1 serv2"
+      "serv3 serv4"
+      ;
+      height: 90vh;
+      align-content: center;
+      justify-content: center;
+      place-items: center; /* Centra tanto horizontal como verticalmente */
+   }
 
-} 
+   .serv#venta{
+      grid-area: serv1;
+   }
+
+   .serv#cria{
+      grid-area: serv2;
+   }
+
+   .serv#doma{
+      grid-area: serv3;
+   }
+
+   .serv#entrenamiento{
+      grid-area: serv4;
+   }
+
+   /* testimonios de la pagina inicial */
+   .contenedorTest {
+      height: 115vh;
+   }
+   
+   .test{
+      width: 600px;
+      height: 150px;
+   }
+   
+   .estrellas{
+      width: 15%;
+   }
+   
+   .estrellas img{
+      height: 15px;
+   }
+   
+   /* footer */
+   .footer{
+      flex-direction: row;
+      height: 40vh;
+   }
+
+   .logoFooter {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-items: center;
+   }
+
+   .logoPie div h1 {
+      font-size: 50px;
+   }
+   
+   .logoPie div h3 {
+      font-size: 15px;
+   }
+   
+   .footerRedes {
+      width: 60%;
+      justify-content: flex-end;
+      align-items:flex-start;
+      margin-right: 30px;
+   }
+   
+}
+
 
 /* Tabletas como el iPad (1024×768), en modo horizontal, así como algunas pantallas de ordenador portátil, netbook, y de escritorio */
 @media (min-width: 1024px) {
+   /* servicios de la pagina inicial */
+   .contenedorServ{
+      display: grid;
+      /* declaramos filas y columnas de grid, sino no funciona */
+      grid-template-columns: repeat(2, 6fr); /*max son 12 columnas, fr es una medida llamada fraction*/
+      grid-template-rows: repeat(2, 260px) ; /*infinitas*/
+      grid-template-areas: 
+      "serv1 serv2"
+      "serv3 serv4"
+      ;
+      height: 100vh;
+      row-gap: 20px;
+      align-content: center;
+      justify-content: center;
+      place-items: center; /* Centra tanto horizontal como verticalmente */
+   }
 
+   .serv {
+      width: 250px;  
+      height: 250px;
+   }
+
+   .serv div{
+      display: flex;
+      width: 100%;
+      height: 200px;
+   }
+
+   .serv#venta{
+      grid-area: serv1;
+   }
+
+   .serv#cria{
+      grid-area: serv2;
+   }
+
+   .serv#doma{
+      grid-area: serv3;
+   }
+
+   .serv#entrenamiento{
+      grid-area: serv4;
+   }
+   
+   /* testimonios de la pagina inicial */
+   .contenedorTest{
+      display: grid;
+      /* declaramos filas y columnas de grid, sino no funciona */
+      grid-template-columns: repeat(3, 4fr); /*max son 12 columnas, fr es una medida llamada fraction*/
+      grid-template-rows: repeat(1, 235px) ; /*infinitas*/
+      grid-template-areas: 
+      "test1 test2 test3"
+      ;
+      height: 45vh;
+      align-content: center;
+      justify-content: center;
+      place-items: center; /* Centra tanto horizontal como verticalmente */
+   }
+
+   .test#test1{
+      grid-area: test1;
+   }
+
+   .test#test2{
+      grid-area: test2;
+   }
+
+   .test#test3{
+      grid-area: test3;
+   }
+
+   /* Footer*/
+   .footer{
+      flex-direction: row;
+      height: 40vh;
+   }
+
+   .logoFooter {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-items: center;
+   }
+
+   .logoPie div h1 {
+      font-size: 50px;
+   }
+   
+   .logoPie div h3 {
+      font-size: 15px;
+   }
+   
+   .footerRedes {
+      width: 60%;
+      justify-content: flex-end;
+      align-items:flex-start;
+      margin-right: 30px;
+   }
 }
 
 /* Para pantallas panorámicas, principalmente portátiles y de escritorio */
 @media (min-width: 1200px) {
-   .headerIndex{
-      position: sticky; /* esto es para que el indice me siga mientras me deslizo hacia habajoen mi pagina web*/
-      top: 0px;
-      z-index: 1000; /* esto lo puse para que el control del videos de novedades  no se superponga al indice */
-   }
-   
+
 }
