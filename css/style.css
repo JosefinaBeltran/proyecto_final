@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
 
-/* Todo el proyecto tiene mobile first pero con las paginas que podes probar
-el responsive son con la pagina INICIO y SOBRE NOSOTROS */
+/* Las paginas responsive son: INICIO y SOBRE NOSOTROS */
+
 * {
    margin: 0; /* elimina el predeterminado de los navegadores, en este caso el margen */
    padding: 0; /* elimina el predeterminado de los navegadores, en este caso el patio intrno */
@@ -12,6 +12,32 @@ el responsive son con la pagina INICIO y SOBRE NOSOTROS */
 /* fondo del proyeto */
 body {
    background-color: #F7F7E8;
+}
+
+/* Acá se esta utilizndo pseudoelemento ::selection */
+h1::selection {
+   color: #F7F7E8;
+   background-color: #35585C;
+}
+h2::selection {
+   color: #F7F7E8;
+   background-color: #35585C;
+}
+h3::selection {
+   color: #F7F7E8;
+   background-color: #35585C;
+}
+h4::selection {
+   color: #F7F7E8;
+   background-color: #35585C;
+}
+h5::selection {
+   color: #F7F7E8;
+   background-color: #35585C;
+}
+p::selection {
+   color: #F7F7E8;
+   background-color: #35585C;
 }
 /* ------------------------------THE HEADER STARTS HERE------------------------------*/
 /* -----------ENCABEZADO DE TODAS LAS PAGINAS----------- */
@@ -79,6 +105,11 @@ body {
    font-size: 20px;
 }
 
+/* Acá se esta utilizando pseudoclase */
+.nav-link :hover {
+   color: #35585C;
+}
+
 /* ------------------------------THE HEADER FINISH HERE------------------------------*/
 /* ------------------------------THE MAIN STARTS HERE------------------------------*/
 .banner {
@@ -141,6 +172,11 @@ h2 {
 .serv div img{
    width: 100%;
    object-fit: cover;
+}
+
+/* Acá se esta utilizando pseudoclase */
+.serv div img:hover{
+   filter: grayscale(2);
 }
 
 .serv h4{
@@ -327,6 +363,11 @@ h2 {
    text-align: justify;
 }
 
+p::selection {
+   color: #F7F7E8;
+   background-color: #35585C;
+}
+
 .imgEquipo {
    display: flex;
    flex-direction: column;
@@ -404,6 +445,11 @@ h2 {
    height: 400px;
    object-fit: cover;
 }
+
+.servicio div img:hover{
+   filter: grayscale(2);
+}
+
 
 .servicio h4{
    font-family: 'DM Serif Display', sans-serif;
