@@ -1,0 +1,433 @@
+/*bases*/
+* {
+  margin: 0;
+  /* elimina el predeterminado de los navegadores, en este caso el margen */
+  padding: 0;
+  /* elimina el predeterminado de los navegadores, en este caso el patio intrno */
+  box-sizing: border-box;
+  /* los elementos dentro de mi pantalla, intenta que los elementos no se desborden */ }
+
+body {
+  background-color: #F7F7E8; }
+
+.header {
+  position: sticky;
+  /* esto es para que el indice me siga mientras me deslizo hacia habajoen mi pagina web*/
+  top: 0px;
+  z-index: 1000;
+  /* esto lo puse para que el control del videos de novedades  no se superponga al indice */ }
+  .header .navbar {
+    margin: 0;
+    /* Establece el margen superior del navbar a 0 */
+    padding: 0;
+    /* Establece el relleno superior del navbar a 0 */ }
+    .header .navbar .container-fluid {
+      display: flex;
+      background-color: #557174; }
+      .header .navbar .container-fluid .logo {
+        display: flex;
+        width: 150px;
+        height: 150px;
+        align-items: center; }
+        .header .navbar .container-fluid .logo img {
+          width: 120px;
+          height: 120px; }
+        .header .navbar .container-fluid .logo div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .header .navbar .container-fluid .logo div h1 {
+            color: #F7F7E8;
+            font-family: 'DM Serif Display', sans-serif;
+            font-weight: lighter;
+            font-size: 50px; }
+          .header .navbar .container-fluid .logo div h3 {
+            color: #F7F7E8;
+            font-family: 'DM Serif Display', sans-serif;
+            font-weight: lighter;
+            font-size: 10px;
+            margin-top: -10px; }
+      .header .navbar .container-fluid .navbar-toggler {
+        border-color: #F7F7E8; }
+        .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+          background-image: url(../assets/img/menu.png); }
+      .header .navbar .container-fluid .navbar-nav {
+        align-items: center; }
+        .header .navbar .container-fluid .navbar-nav .nav-link {
+          color: #F7F7E8;
+          text-decoration: none;
+          font-family: 'DM Serif Display', sans-serif;
+          font-size: 20px; }
+          .header .navbar .container-fluid .navbar-nav .nav-link a :hover {
+            color: #35585C; }
+
+h1::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+h2::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+h3::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+h4::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+h5::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+p::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+/* ---------------INDEX---------------- */
+.bannerIndex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 999;
+  /* esto lo puse para que el control del videos de novedades  no se superponga al indice */ }
+  .bannerIndex img {
+    margin-top: 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.438); }
+
+.sectionServIndex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px; }
+  .sectionServIndex h2 {
+    color: black;
+    font-family: 'DM Serif Display', sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.205); }
+  .sectionServIndex .contenedorServ {
+    display: flex;
+    flex-direction: column;
+    background-color: #C7CFB7;
+    width: 100%;
+    height: 150vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px; }
+    .sectionServIndex .contenedorServ .serv {
+      display: flex;
+      flex-direction: column;
+      background-color: #F7F7E8;
+      width: 200px;
+      height: 200px;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+      align-items: center; }
+      .sectionServIndex .contenedorServ .serv div {
+        display: flex;
+        width: 100%;
+        height: 160px; }
+        .sectionServIndex .contenedorServ .serv div img {
+          width: 100%;
+          object-fit: cover; }
+          .sectionServIndex .contenedorServ .serv div img img:hover {
+            filter: grayscale(2); }
+      .sectionServIndex .contenedorServ .serv h4 {
+        font-family: 'Montserrat';
+        font-size: 13px;
+        font-style: italic;
+        text-align: center;
+        margin: 10px; }
+
+.sectionTestIndex {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px; }
+  .sectionTestIndex .contenedorTest {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 115vh;
+    justify-content: space-evenly;
+    align-items: center; }
+    .sectionTestIndex .contenedorTest .test {
+      display: flex;
+      flex-direction: column;
+      background-color: #9DAD7F;
+      width: 270px;
+      height: 200px;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
+      .sectionTestIndex .contenedorTest .test h5 {
+        color: black;
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-size: 15px;
+        margin: 15px; }
+      .sectionTestIndex .contenedorTest .test .estrellas {
+        display: flex;
+        flex-direction: row;
+        width: 20px;
+        height: 13px;
+        margin-left: 15px; }
+        .sectionTestIndex .contenedorTest .test .estrellas img {
+          width: 100%;
+          height: 13px; }
+      .sectionTestIndex .contenedorTest .test p {
+        color: black;
+        font-family: 'Montserrat';
+        font-size: 13px;
+        margin: 15px;
+        text-align: justify;
+        justify-self: center; }
+
+/* ---------------SOBRE NOSOSTROS---------------- */
+.sobreNosotros {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .sobreNosotros .carousel {
+    margin: 10px; }
+    .sobreNosotros .carousel h2 {
+      color: #F7F7E8;
+      font-family: 'DM Serif Display', sans-serif;
+      font-weight: lighter;
+      font-size: 25px;
+      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+      margin-top: -60px;
+      margin-left: 10px; }
+  .sobreNosotros .contenedorEquipo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 130vh;
+    align-items: center; }
+    .sobreNosotros .contenedorEquipo section {
+      display: flex;
+      flex-direction: column;
+      background-color: #C7CFB7;
+      height: 110vh;
+      margin-top: 5px;
+      justify-content: center;
+      align-items: center; }
+      .sobreNosotros .contenedorEquipo section .equipo {
+        display: flex;
+        flex-direction: column;
+        width: 90%; }
+        .sobreNosotros .contenedorEquipo section .equipo h4 {
+          font-family: 'Montserrat';
+          font-size: 20px;
+          text-align: center; }
+        .sobreNosotros .contenedorEquipo section .equipo p {
+          font-family: 'Montserrat';
+          font-size: 14px;
+          margin: 20px;
+          text-align: justify; }
+          .sobreNosotros .contenedorEquipo section .equipo p p::selection {
+            color: #F7F7E8;
+            background-color: #35585C; }
+      .sobreNosotros .contenedorEquipo section .imgEquipo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+        .sobreNosotros .contenedorEquipo section .imgEquipo img {
+          width: 200px;
+          height: 200px; }
+
+/* ---------------SERVICIOS---------------- */
+.tituloServicios {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px; }
+  .tituloServicios div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 60px;
+    background-color: #9DAD7F;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 0px 20px 0px; }
+    .tituloServicios div h2 {
+      font-family: 'DM Serif Display', sans-serif;
+      font-weight: lighter;
+      font-size: 30px; }
+
+.contenedorServicio {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .contenedorServicio div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-content: center;
+    justify-content: center; }
+    .contenedorServicio div .servicio {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      height: 400px;
+      align-items: center;
+      margin: 15px; }
+      .contenedorServicio div .servicio div {
+        width: 150px;
+        height: 200px;
+        border-radius: 45% 45% 20px 20px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+        overflow: hidden; }
+        .contenedorServicio div .servicio div img {
+          width: 100%;
+          height: 100vh;
+          object-fit: cover; }
+          .contenedorServicio div .servicio div img img:hover {
+            filter: grayscale(2); }
+      .contenedorServicio div .servicio h4 {
+        font-family: 'DM Serif Display', sans-serif;
+        font-weight: lighter;
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+        margin: 20px; }
+      .contenedorServicio div .servicio p {
+        font-family: 'Montserrat';
+        font-size: 13px;
+        text-align: justify;
+        margin: 10px; }
+
+/* --------------NOVEDADES---------------- */
+.banner video {
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.438); }
+
+.contenedorFotos {
+  display: none; }
+
+.fechasNosotros {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 380px;
+  align-items: center;
+  justify-items: center; }
+  .fechasNosotros h3 {
+    font-family: 'DM Serif Display', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    margin: 18px; }
+  .fechasNosotros p {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    text-align: justify;
+    margin: 10px; }
+  .fechasNosotros hr {
+    border: none;
+    border-top: 1.5px solid black;
+    width: 35%; }
+
+/* --------------CONTACTO---------------- */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-items: center; }
+  .form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+    background-color: #C7CFB7;
+    margin: 10px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
+    .form form fieldset legend {
+      text-align: center;
+      font-weight: bold;
+      text-decoration: underline; }
+    .form form fieldset label {
+      font-weight: bold;
+      margin: 5px; }
+    .form form fieldset input {
+      margin-left: 10px; }
+    .form form fieldset input[type="number"] {
+      width: 110px; }
+    .form form fieldset input[type="submit"] {
+      margin: 15px 0px 10px 15px; }
+    .form form fieldset input[type="reset"] {
+      margin: 15px 0px 10px 15px; }
+
+.infoContacto {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center; }
+  .infoContacto .mapa {
+    width: 220px;
+    height: 220px;
+    margin: 10px; }
+    .infoContacto .mapa iframe {
+      width: 200px;
+      height: 200px;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
+  .infoContacto section {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center; }
+    .infoContacto section img {
+      width: 50px;
+      height: 45px; }
+    .infoContacto section p {
+      font-family: 'Montserrat';
+      font-size: 10px;
+      text-align: justify;
+      margin: 5px; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #557174;
+  width: 100%;
+  height: 50vh; }
+  .footer .logoFooter {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center; }
+    .footer .logoFooter .logoPie img {
+      width: 150px;
+      height: 150px; }
+    .footer .logoFooter .logoPie div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: -20px; }
+      .footer .logoFooter .logoPie div h1 {
+        color: #F7F7E8;
+        font-family: 'DM Serif Display', sans-serif;
+        font-weight: lighter;
+        font-size: 40px; }
+      .footer .logoFooter .logoPie div h3 {
+        color: #F7F7E8;
+        font-family: 'DM Serif Display', sans-serif;
+        font-weight: lighter;
+        font-size: 10px;
+        margin-top: -10px; }
+  .footer .footerRedes {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 30px; }
+    .footer .footerRedes div a img {
+      width: 50px;
+      height: 40px; }

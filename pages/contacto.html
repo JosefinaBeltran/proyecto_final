@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header class="headerIndex">
+    <header class="header">
         <!-- barra de navegación con bootstrap -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -64,25 +64,24 @@
         </section>
 
         <section class="form">
-            <hr>
             <form action="">
                 <fieldset>
                     <legend>Datos personales</legend>
 
-                    <label for="nombre">Nombre: </label>
+                    <label for="nombre">Nombre: </label><br>
                     <input type="text" id="nombre" required placeholder="Ingresa tu nombre"> 
                     <br>
-                    <label for="apellido">Apellido: </label>
+                    <label for="apellido">Apellido: </label><br>
                     <input type="text" id="apellido" required placeholder="Ingresa tu apellido">
                     <br>
-                    <label for="mail">Mail: </label>
+                    <label for="mail">Mail: </label><br>
                     <input type="email" id="mail" required placeholder="Ingresa tu mail">
                     <br>
-                    <label for="num">Ingresa tu numero: </label>
-                    <input type="number" id="num" min="18" max="100">
+                    <label for="num">Celular: </label><br>
+                    <input type="number" id="num" min="10" max="18" required placeholder="(351) 1234567">
                     <br>
-                    <label for="servicio">Elegi servicio a consultar>
-                    <select name="Seleccion servicio" id="servicio">
+                    <label for="servicio">Elegi servicio a consultar<br>
+                        <select name="Seleccion servicio" id="servicio">
                         <option value="valor 1">Venta y Asesoramiento</option>
                         <option value="valor 2">Cria</option>
                         <option value="valor 3">Doma</option>
@@ -94,7 +93,6 @@
                     <input type="reset" value="Limpiar">
                 </fieldset>
             </form>
-            <hr>
         </section>
 
         <section class="infoContacto">

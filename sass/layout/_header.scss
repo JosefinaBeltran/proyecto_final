@@ -1,0 +1,62 @@
+.header {
+    position: sticky; /* esto es para que el indice me siga mientras me deslizo hacia habajoen mi pagina web*/
+    top: 0px;
+    z-index: 1000; /* esto lo puse para que el control del videos de novedades  no se superponga al indice */
+    .navbar{
+        margin: 0; /* Establece el margen superior del navbar a 0 */
+        padding: 0; /* Establece el relleno superior del navbar a 0 */
+        .container-fluid{
+            display: flex;
+            background-color: #557174;
+            .logo {
+                display: flex;
+                width: 150px;
+                height: 150px;
+                align-items: center;
+                img {
+                    width: 120px;
+                    height: 120px;
+                }
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h1 {
+                        color: map-get($colores, headerH1 );
+                        font-family: 'DM Serif Display', sans-serif;
+                        font-weight: lighter;
+                        font-size: 50px;
+                    }
+                    h3 {
+                        color: map-get($colores, headerH3 );
+                        font-family: 'DM Serif Display', sans-serif;
+                        font-weight: lighter;
+                        font-size: 10px;
+                        margin-top: -10px;
+                    }
+                }
+            }
+            .navbar-toggler{
+                border-color:  #F7F7E8;
+                .navbar-toggler-icon{
+                    background-image: url(../assets/img/menu.png);
+                }
+            }
+            .navbar-nav {
+                align-items: center;
+                .nav-link{
+                    color: #F7F7E8;
+                    text-decoration: none;
+                    font-family: 'DM Serif Display', sans-serif;
+                    font-size: 20px;
+                    a :hover {
+                        color: #35585C;
+                    }
+                }   
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,9 @@
+* {
+    margin: 0; /* elimina el predeterminado de los navegadores, en este caso el margen */
+    padding: 0; /* elimina el predeterminado de los navegadores, en este caso el patio intrno */
+    box-sizing: border-box; /* los elementos dentro de mi pantalla, intenta que los elementos no se desborden */
+} 
+
+body {
+    background-color: #F7F7E8;
+}
