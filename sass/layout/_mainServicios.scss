@@ -1,0 +1,71 @@
+.tituloServicios {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60px;
+        background-color: #9DAD7F;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 0px 20px 0px;
+        h2 {
+            font-family: 'DM Serif Display', sans-serif;
+            font-weight: lighter;
+            font-size: 30px;
+        }
+    }
+}
+
+.contenedorServicio {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-content: center;
+            justify-content: center;
+            .servicio {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                height: 400px;
+                align-items: center;
+                margin: 15px;
+                div {
+                    width: 150px;
+                    height: 200px;
+                    border-radius: 45% 45% 20px 20px;
+                    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100vh;
+                        object-fit: cover;
+                        img:hover{
+                            filter: grayscale(2);
+                        }
+                    }
+                }
+                h4{
+                    font-family: 'DM Serif Display', sans-serif;
+                    font-weight: lighter;
+                    font-size: 18px;
+                    font-style: italic;
+                    text-align: center;
+                    margin: 20px;
+                }
+                p{
+                    font-family: 'Montserrat';
+                    font-size: 13px;
+                    text-align: justify;
+                    margin: 10px;
+                }
+            }
+        }
+}

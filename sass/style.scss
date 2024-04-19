@@ -1,7 +1,25 @@
+@import "./utilities/maps";
+@import "./utilities/pseudo";
+
 /*bases*/
 @import "./base/reset";
-@import "./utilities/maps";
+@import "./base/tipografias";
 
+/*layout*/
+/*los archivos header, mainX y footer enstan hechos para la media320*/
 @import "./layout/header";
-@import "./layout/main";
+@import "./layout/mainIndex";
+@import "./layout/mainSobreNosotros";
+@import "./layout/mainServicios";
+@import "./layout/mainNovedades";
+@import "./layout/mainContacto";
 @import "./layout/footer";
+@import "./layout/mediaQuery/media280";
+@import "./layout/mediaQuery/media300";
+@import "./layout/mediaQuery/media375";
+@import "./layout/mediaQuery/media425";
+@import "./layout/mediaQuery/media500";
+@import "./layout/mediaQuery/media600";
+@import "./layout/mediaQuery/media768-1023";
+@import "./layout/mediaQuery/media1024";
+@import "./layout/mediaQuery/media1200";

@@ -1,0 +1,12 @@
+/* Para dispositivos con pantallas pequeñas, como los teléfonos, en modo horizontal */
+@media (min-width: 375px) {
+    /* Pagina inicio no necesita cambios */
+    /* Pagina Sobre Nosotros */   
+    .contenedorEquipo {
+       height: 120vh;
+    }  
+ 
+    .contenedorEquipo section {
+       height: 100vh;
+    }
+ }

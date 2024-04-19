@@ -1,0 +1,115 @@
+.bannerIndex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 999; /* esto lo puse para que el control del videos de novedades  no se superponga al indice */
+    img {
+        margin-top: 15px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.438);
+    }
+}
+
+.sectionServIndex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    h2 {
+        color: black;
+        font-family: 'DM Serif Display', sans-serif;
+        font-weight: lighter;
+        font-size: 25px;
+        text-shadow:  1px 1px 2px rgba(0, 0, 0, 0.205);
+    }
+    .contenedorServ {
+        display: flex;
+        flex-direction: column;
+        background-color: #C7CFB7;
+        width: 100%;
+        height: 150vh;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 20px;
+        .serv {
+            display: flex;
+            flex-direction: column;
+            background-color: #F7F7E8;
+            width: 200px;
+            height: 200px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+            align-items: center;
+            div{
+                display: flex;
+                width: 100%;
+                height: 160px;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                }
+                img:hover{
+                    filter: grayscale(2);
+                }
+            }
+            h4{
+                font-family: 'Montserrat';
+                font-size: 13px;
+                font-style: italic;
+                text-align: center;
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.sectionTestIndex {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    .contenedorTest {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 115vh;
+        justify-content: space-evenly;
+        align-items: center;
+        .test{
+            display: flex;
+            flex-direction: column;
+            background-color: #9DAD7F;
+            width: 270px;
+            height: 200px;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+            h5{
+                color: black;
+                font-family: 'Montserrat';
+                font-style: italic;
+                font-size: 15px;
+                margin: 15px;
+            }
+            .estrellas {
+                display: flex;
+                flex-direction: row;
+                width: 20px;
+                height: 13px;
+                margin-left: 15px;
+                img{
+                    width: 100%;
+                    height: 13px;
+                }
+            }
+            p{
+                color: black;
+                font-family: 'Montserrat';
+                font-size: 13px;
+                margin: 15px;
+                text-align: justify;
+                justify-self: center;
+            }
+        }
+    }
+}

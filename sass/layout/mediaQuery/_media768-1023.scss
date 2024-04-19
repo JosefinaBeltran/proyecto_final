@@ -1,0 +1,98 @@
+/* Tabletas de diez pulgadas, en modo vertica */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar-collapse{
+       justify-content: flex-end;
+    }
+ 
+    .carousel-item div h2{
+       font-size: 60px;
+       margin-top: -140px;
+    }
+ 
+    .contenedorEquipo {
+       height: 95vh;
+    }
+    
+    .contenedorEquipo section {
+       height: 78vh;
+    }
+ 
+    /* servicios de la pagina inicial */
+    .contenedorServ{
+       display: grid;
+       /* declaramos filas y columnas de grid, sino no funciona */
+       grid-template-columns: repeat(2, 6fr); /*max son 12 columnas, fr es una medida llamada fraction*/
+       grid-template-rows: repeat(2, 235px) ; /*infinitas*/
+       grid-template-areas:
+       "serv1 serv2"
+       "serv3 serv4"
+       ;
+       height: 90vh;
+       align-content: center;
+       justify-content: center;
+       place-items: center; /* Centra tanto horizontal como verticalmente */
+    }
+ 
+    .serv#venta{
+       grid-area: serv1;
+    }
+ 
+    .serv#cria{
+       grid-area: serv2;
+    }
+ 
+    .serv#doma{
+       grid-area: serv3;
+    }
+ 
+    .serv#entrenamiento{
+       grid-area: serv4;
+    }
+ 
+    /* testimonios de la pagina inicial */
+    .contenedorTest {
+       height: 115vh;
+    }
+ 
+    .test{
+       width: 600px;
+       height: 150px;
+    }
+ 
+    .estrellas{
+       width: 15%;
+    }
+ 
+    .estrellas img{
+       height: 15px;
+    }
+ 
+    /* footer */
+    .footer{
+       flex-direction: row;
+       height: 40vh;
+    }
+ 
+    .logoFooter {
+       display: flex;
+       flex-direction: column;
+       width: 40%;
+       align-items: center;
+    }
+ 
+    .logoPie div h1 {
+       font-size: 50px;
+    }
+ 
+    .logoPie div h3 {
+       font-size: 15px;
+    }
+ 
+    .footerRedes {
+       width: 60%;
+       justify-content: flex-end;
+       align-items:flex-start;
+       margin-right: 30px;
+    }
+ 
+ }

@@ -1,3 +1,30 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+h1::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+h2::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+h3::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+h4::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+h5::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
+p::selection {
+  color: #F7F7E8;
+  background-color: #35585C; }
+
 /*bases*/
 * {
   margin: 0;
@@ -10,6 +37,8 @@
 body {
   background-color: #F7F7E8; }
 
+/*layout*/
+/*los archivos header, mainX y footer enstan hechos para la media320*/
 .header {
   position: sticky;
   /* esto es para que el indice me siga mientras me deslizo hacia habajoen mi pagina web*/
@@ -54,39 +83,12 @@ body {
           background-image: url(../assets/img/menu.png); }
       .header .navbar .container-fluid .navbar-nav {
         align-items: center; }
-        .header .navbar .container-fluid .navbar-nav .nav-link {
+        .header .navbar .container-fluid .navbar-nav .nav-item .nav-link {
           color: #F7F7E8;
           text-decoration: none;
           font-family: 'DM Serif Display', sans-serif;
           font-size: 20px; }
-          .header .navbar .container-fluid .navbar-nav .nav-link a :hover {
-            color: #35585C; }
 
-h1::selection {
-  color: #F7F7E8;
-  background-color: #35585C; }
-
-h2::selection {
-  color: #F7F7E8;
-  background-color: #35585C; }
-
-h3::selection {
-  color: #F7F7E8;
-  background-color: #35585C; }
-
-h4::selection {
-  color: #F7F7E8;
-  background-color: #35585C; }
-
-h5::selection {
-  color: #F7F7E8;
-  background-color: #35585C; }
-
-p::selection {
-  color: #F7F7E8;
-  background-color: #35585C; }
-
-/* ---------------INDEX---------------- */
 .bannerIndex {
   display: flex;
   align-items: center;
@@ -134,8 +136,8 @@ p::selection {
         .sectionServIndex .contenedorServ .serv div img {
           width: 100%;
           object-fit: cover; }
-          .sectionServIndex .contenedorServ .serv div img img:hover {
-            filter: grayscale(2); }
+        .sectionServIndex .contenedorServ .serv div img:hover {
+          filter: grayscale(2); }
       .sectionServIndex .contenedorServ .serv h4 {
         font-family: 'Montserrat';
         font-size: 13px;
@@ -187,7 +189,6 @@ p::selection {
         text-align: justify;
         justify-self: center; }
 
-/* ---------------SOBRE NOSOSTROS---------------- */
 .sobreNosotros {
   display: flex;
   flex-direction: column;
@@ -241,7 +242,6 @@ p::selection {
           width: 200px;
           height: 200px; }
 
-/* ---------------SERVICIOS---------------- */
 .tituloServicios {
   display: flex;
   flex-direction: column;
@@ -303,7 +303,6 @@ p::selection {
         text-align: justify;
         margin: 10px; }
 
-/* --------------NOVEDADES---------------- */
 .banner video {
   width: 100%;
   margin-top: 10px;
@@ -334,7 +333,6 @@ p::selection {
     border-top: 1.5px solid black;
     width: 35%; }
 
-/* --------------CONTACTO---------------- */
 .form {
   display: flex;
   flex-direction: column;
@@ -431,3 +429,225 @@ p::selection {
     .footer .footerRedes div a img {
       width: 50px;
       height: 40px; }
+
+/* Para dispositivos con pantallas pequeñas, como los teléfonos, en modo horizontal */
+@media (min-width: 375px) {
+  /* Pagina inicio no necesita cambios */
+  /* Pagina Sobre Nosotros */
+  .contenedorEquipo {
+    height: 120vh; }
+  .contenedorEquipo section {
+    height: 100vh; } }
+
+@media (min-width: 425px) {
+  /* Pagina inicio no necesita cambios */
+  /* Pagina Sobre Nosotros */
+  .carousel-item div h2 {
+    font-size: 30px;
+    margin-top: -70px; } }
+
+/* Tabletas pequeñas, en modo vertical */
+@media (min-width: 500px) {
+  /* Pagina inicio no necesita cambios */
+  .carousel-item div h2 {
+    font-size: 35px;
+    margin-top: -90px; }
+  .contenedorEquipo {
+    height: 105vh; }
+  .contenedorEquipo section {
+    height: 90vh; }
+  .equipo h4 {
+    font-size: 23px; } }
+
+@media (min-width: 600px) {
+  /* Pagina inicio no necesita cambios */
+  .carousel-item div h2 {
+    font-size: 45px;
+    margin-top: -105px; } }
+
+/* Tabletas de diez pulgadas, en modo vertica */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .navbar-collapse {
+    justify-content: flex-end; }
+  .carousel-item div h2 {
+    font-size: 60px;
+    margin-top: -140px; }
+  .contenedorEquipo {
+    height: 95vh; }
+  .contenedorEquipo section {
+    height: 78vh; }
+  /* servicios de la pagina inicial */
+  .contenedorServ {
+    display: grid;
+    /* declaramos filas y columnas de grid, sino no funciona */
+    grid-template-columns: repeat(2, 6fr);
+    /*max son 12 columnas, fr es una medida llamada fraction*/
+    grid-template-rows: repeat(2, 235px);
+    /*infinitas*/
+    grid-template-areas: "serv1 serv2" "serv3 serv4";
+    height: 90vh;
+    align-content: center;
+    justify-content: center;
+    place-items: center;
+    /* Centra tanto horizontal como verticalmente */ }
+  .serv#venta {
+    grid-area: serv1; }
+  .serv#cria {
+    grid-area: serv2; }
+  .serv#doma {
+    grid-area: serv3; }
+  .serv#entrenamiento {
+    grid-area: serv4; }
+  /* testimonios de la pagina inicial */
+  .contenedorTest {
+    height: 115vh; }
+  .test {
+    width: 600px;
+    height: 150px; }
+  .estrellas {
+    width: 15%; }
+  .estrellas img {
+    height: 15px; }
+  /* footer */
+  .footer {
+    flex-direction: row;
+    height: 40vh; }
+  .logoFooter {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center; }
+  .logoPie div h1 {
+    font-size: 50px; }
+  .logoPie div h3 {
+    font-size: 15px; }
+  .footerRedes {
+    width: 60%;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-right: 30px; } }
+
+/* Tabletas como el iPad (1024×768), en modo horizontal, así como algunas pantallas de ordenador portátil, netbook, y de escritorio */
+@media (min-width: 1024px) {
+  /*header TODAS las paginas*/
+  .navbar-collapse {
+    justify-content: flex-end; }
+  /*ServIndex*/
+  .contenedorServ {
+    display: grid;
+    /* declaramos filas y columnas de grid, sino no funciona */
+    grid-template-columns: repeat(2, 6fr);
+    /*max son 12 columnas, fr es una medida llamada fraction*/
+    grid-template-rows: repeat(2, 260px);
+    /*infinitas*/
+    grid-template-areas: "serv1 serv2" "serv3 serv4";
+    height: 100vh;
+    row-gap: 20px;
+    align-content: center;
+    justify-content: center;
+    place-items: center;
+    /* Centra tanto horizontal como verticalmente */ }
+    .contenedorServ .serv {
+      width: 250px;
+      height: 250px; }
+      .contenedorServ .serv div {
+        display: flex;
+        width: 100%;
+        height: 200px; }
+    .contenedorServ .serv#venta {
+      grid-area: serv1; }
+    .contenedorServ .serv#cria {
+      grid-area: serv2; }
+    .contenedorServ .serv#doma {
+      grid-area: serv3; }
+    .contenedorServ .serv#entrenamiento {
+      grid-area: serv4; }
+  /*TestIndex*/
+  .contenedorTest {
+    display: grid;
+    /* declaramos filas y columnas de grid, sino no funciona */
+    grid-template-columns: repeat(3, 4fr);
+    /*max son 12 columnas, fr es una medida llamada fraction*/
+    grid-template-rows: repeat(1, 235px);
+    /*infinitas*/
+    grid-template-areas: "test1 test2 test3";
+    height: 45vh;
+    align-content: center;
+    justify-content: center;
+    place-items: center;
+    /* Centra tanto horizontal como verticalmente */ }
+    .contenedorTest .test#test1 {
+      grid-area: test1; }
+    .contenedorTest .test#test2 {
+      grid-area: test2; }
+    .contenedorTest .test#test3 {
+      grid-area: test3; }
+  /*footer TODAS las paginas*/
+  .footer {
+    flex-direction: row;
+    height: 40vh; }
+    .footer .logoFooter {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-items: center; }
+      .footer .logoFooter .logoPie div h1 {
+        font-size: 50px; }
+      .footer .logoFooter .logoPie div h3 {
+        font-size: 15px; }
+    .footer .footerRedes {
+      width: 60%;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-right: 30px; }
+  /*SobreNosotros*/
+  .carousel-item div h2 {
+    font-size: 63px;
+    margin-top: -155px; }
+  .contenedorEquipo {
+    height: 85vh; }
+    .contenedorEquipo section {
+      height: 70vh; } }
+
+/* Para pantallas panorámicas, principalmente portátiles y de escritorio */
+@media (min-width: 1200px) {
+  /*header TODAS las paginas*/
+  .navbar-collapse {
+    justify-content: flex-end; }
+    .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+      color: #35585C;
+      /*no me esta funcionando - averiguar con profes*/ }
+  .bannerIndex {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 999;
+    /* esto lo puse para que el control del videos de novedades  no se superponga al indice */ }
+    .bannerIndex .carrousel-item {
+      width: 50%;
+      height: 30vh; }
+      .bannerIndex .carrousel-item img {
+        margin-top: 15px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.438); }
+  h2 {
+    font-size: 30px; }
+  /*mainIndex*/
+  .carousel-item div h2 {
+    font-size: 63px;
+    margin-top: -155px; }
+  /*mainSobreNosotros*/
+  .contenedorEquipo {
+    height: 75vh; }
+    .contenedorEquipo section {
+      flex-direction: row;
+      height: 55vh; }
+      .contenedorEquipo section .equipo {
+        width: 60%;
+        margin: 40px; }
+        .contenedorEquipo section .equipo h4 {
+          font-size: 25px; }
+      .contenedorEquipo section .imgEquipo {
+        width: 30%; }
+        .contenedorEquipo section .imgEquipo img {
+          width: 250px;
+          height: 250px; } }

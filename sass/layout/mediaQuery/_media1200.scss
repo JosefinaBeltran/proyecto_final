@@ -1,0 +1,64 @@
+/* Para pantallas panorámicas, principalmente portátiles y de escritorio */
+@media (min-width: 1200px) {
+    /*header TODAS las paginas*/
+    .navbar-collapse{
+        justify-content: flex-end;
+        .navbar-nav {
+            .nav-item {
+                .nav-link:hover {
+                    color: #35585C; /*no me esta funcionando - averiguar con profes*/
+                }
+            }
+        }
+    }
+
+    .bannerIndex {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 999; /* esto lo puse para que el control del videos de novedades  no se superponga al indice */
+        .carrousel-item{
+            width: 50%;
+            height: 30vh;
+            img {
+                margin-top: 15px;
+                box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.438);
+            }
+        }
+        
+    }
+
+
+    h2 {
+        font-size: 30px;
+    }
+
+    /*mainIndex*/
+    .carousel-item div h2{
+        font-size: 63px;
+        margin-top: -155px;
+    }
+
+    /*mainSobreNosotros*/
+    .contenedorEquipo {
+        height: 75vh;
+        section {
+            flex-direction: row;
+            height: 55vh;
+            .equipo {
+                width: 60%;
+                margin: 40px;
+                h4 {
+                    font-size: 25px;
+                }
+            }
+            .imgEquipo {
+                width: 30%;
+                img {
+                    width: 250px;
+                    height: 250px;
+                } 
+            }
+        }
+    }
+}
