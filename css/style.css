@@ -119,6 +119,7 @@ body {
     flex-direction: column;
     background-color: #C7CFB7;
     width: 100%;
+    height: 170vh;
     justify-content: space-evenly;
     align-items: center; }
     .sectionServIndex .contenedorServ .serv {
@@ -509,6 +510,7 @@ body {
   .sectionServIndex h2 {
     font-size: 30px; }
   .sectionServIndex .contenedorServ {
+    height: 90vh;
     display: grid;
     /* declaramos filas y columnas de grid, sino no funciona */
     grid-template-columns: repeat(2, 6fr);
@@ -591,6 +593,10 @@ body {
         font-size: 12px; }
     .header .navbar .container-fluid .navbar-collapse {
       justify-content: flex-end; }
+      .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+        font-size: 20px; }
+      .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item:hover {
+        transform: scale(1.1); }
   /*ServIndex*/
   .sectionServIndex .contenedorServ {
     display: grid;
@@ -600,7 +606,7 @@ body {
     grid-template-rows: repeat(2, 260px);
     /*infinitas*/
     grid-template-areas: "serv1 serv2" "serv3 serv4";
-    height: 85vh;
+    height: 100vh;
     row-gap: 20px;
     align-content: center;
     justify-content: center;
@@ -630,7 +636,7 @@ body {
     grid-template-rows: repeat(1, 235px);
     /*infinitas*/
     grid-template-areas: "test1 test2 test3";
-    height: 35vh;
+    height: 40vh;
     align-content: center;
     justify-content: center;
     place-items: center;
@@ -654,6 +660,7 @@ body {
     .sobreNosotros .contenedorEquipo section {
       display: flex;
       flex-direction: row;
+      justify-content: center;
       height: 50vh; }
       .sobreNosotros .contenedorEquipo section .equipo {
         width: 60%; }
@@ -682,6 +689,8 @@ body {
         height: 150px;
         object-fit: cover;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
+      .contenedorFotos div img:hover {
+        transform: scale(1.2); }
   /*contacto*/
   .form form {
     width: 40%; }
@@ -692,14 +701,14 @@ body {
     .footer .logoFooter {
       display: flex;
       flex-direction: column;
-      width: 40%;
+      width: 30%;
       align-items: center; }
       .footer .logoFooter .logoPie div h1 {
         font-size: 50px; }
       .footer .logoFooter .logoPie div h3 {
         font-size: 15px; }
     .footer .footerRedes {
-      width: 60%;
+      width: 70%;
       justify-content: flex-end;
       align-items: flex-start;
       margin-right: 30px; } }
@@ -717,4 +726,9 @@ body {
   .sobreNosotros .contenedorEquipo section {
     height: 40vh; }
   .contenedorServicio div .servicio div img {
-    height: 30vh; } }
+    height: 30vh; }
+  /*footer TODAS las paginas*/
+  .footer .logoFooter {
+    width: 20%; }
+  .footer .footerRedes {
+    width: 80%; } }

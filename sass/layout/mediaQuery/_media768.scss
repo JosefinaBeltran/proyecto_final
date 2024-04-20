@@ -40,6 +40,7 @@
          font-size: 30px;
       }
       .contenedorServ{
+         height: 90vh;
          display: grid;
          /* declaramos filas y columnas de grid, sino no funciona */
          grid-template-columns: repeat(2, 6fr); /*max son 12 columnas, fr es una medida llamada fraction*/
