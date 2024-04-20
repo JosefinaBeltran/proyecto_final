@@ -1,7 +1,11 @@
+/*utilities*/
 @import "./utilities/maps";
 @import "./utilities/pseudo";
+@import "./utilities/variables";
+@import "./utilities/maps";
+@import "./utilities/mixins";
 
-/*bases*/
+/*base*/
 @import "./base/reset";
 @import "./base/tipografias";
 
@@ -14,10 +18,13 @@
 @import "./layout/mainNovedades";
 @import "./layout/mainContacto";
 @import "./layout/footer";
+
+/*mediaQuery*/
 @import "./layout/mediaQuery/media375";
 @import "./layout/mediaQuery/media425";
 @import "./layout/mediaQuery/media500";
 @import "./layout/mediaQuery/media600";
-@import "./layout/mediaQuery/media768-1023";
+@import "./layout/mediaQuery/media768";
 @import "./layout/mediaQuery/media1024";
 @import "./layout/mediaQuery/media1200";
+

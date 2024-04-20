@@ -1,7 +1,7 @@
 .footer{
     display: flex;
     flex-direction: column;
-    background-color: #557174;
+    background-color: map-get($fondos, fondoHeaderFooter);
     width: 100%;
     .logoFooter {
         display: flex;
@@ -20,13 +20,13 @@
                 align-items: center;
                 margin-top: -20px;
                 h1 {
-                    color: #F7F7E8;
+                    color: map-get($texto, logoH1);
                     font-family: 'DM Serif Display', sans-serif;
                     font-weight: lighter;
                     font-size: 40px;
                 }
                 h3 {
-                    color: #F7F7E8;
+                    color: map-get($texto, logoH3);
                     font-family: 'DM Serif Display', sans-serif;
                     font-weight: lighter;
                     font-size: 10px;

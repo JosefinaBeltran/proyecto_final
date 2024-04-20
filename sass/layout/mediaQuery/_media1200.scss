@@ -21,28 +21,9 @@
                 }
             }
         }
-
         .contenedorEquipo {
-            display: flex;
-            flex-direction: column;
-            h2{
-                font-size: 30px;
-            }
             section {
-                display: flex;
-                flex-direction: row;
-                .equipo {
-                    width: 60%;
-                    h4 {
-                        font-size: 25px;
-                    }
-                    p {
-                        font-size: 16px;
-                    }
-                }
-                .imgEquipo {
-                    margin: 20px;
-                }
+                height: 40vh;
             }
         }
     }

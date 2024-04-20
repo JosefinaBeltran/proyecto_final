@@ -18,12 +18,14 @@
     align-items: center;
     justify-items: center;
     h3 {
+        color: map-get($texto, texto);
         font-family: 'DM Serif Display', sans-serif;
         font-weight: lighter;
         font-size: 20px;
         margin: 18px;
     }
     p{
+        color: map-get($texto, texto);
         font-family: 'Montserrat';
         font-size: 15px;
         text-align: justify;

@@ -1,5 +1,5 @@
 /* Tabletas de diez pulgadas, en modo vertica */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
    /*header*/
    .header{
       .navbar{
@@ -99,6 +99,21 @@
          }
          section {
             height: 78vh;
+         }
+      }
+   }
+
+   /*servicios*/
+   .contenedorServicio {
+      div{
+         flex-direction: row;
+         justify-content: space-around;
+         .servicio {      
+            div {
+               img{
+                  height: 33vh;
+               }
+            }
          }
       }
    }

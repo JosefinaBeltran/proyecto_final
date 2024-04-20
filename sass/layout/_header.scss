@@ -7,7 +7,7 @@
         padding: 0; /* Establece el relleno superior del navbar a 0 */
         .container-fluid{
             display: flex;
-            background-color: #557174;
+            background-color: map-get($fondos, fondoHeaderFooter);
             .logo {
                 display: flex;
                 width: 150px;
@@ -23,13 +23,13 @@
                     justify-content: center;
                     align-items: center;
                     h1 {
-                        color: map-get($colores, headerH1 );
+                        color: map-get($texto, logoH1);
                         font-family: 'DM Serif Display', sans-serif;
                         font-weight: lighter;
                         font-size: 50px;
                     }
                     h3 {
-                        color: map-get($colores, headerH3 );
+                        color: map-get($texto, logoH3);
                         font-family: 'DM Serif Display', sans-serif;
                         font-weight: lighter;
                         font-size: 10px;
@@ -38,7 +38,7 @@
                 }
             }
             .navbar-toggler{
-                border-color:  #F7F7E8;
+                border-color: map-get($colorObjeto, colorLogo);
                 .navbar-toggler-icon{
                     background-image: url(../assets/img/menu.png);
                 }
@@ -48,7 +48,7 @@
                     align-items: center;
                     .nav-item {
                         .nav-link {
-                            color: #F7F7E8;
+                            color: map-get($colorObjeto, colorLogo);
                             text-decoration: none;
                             font-family: 'DM Serif Display', sans-serif;
                             font-size: 20px;    

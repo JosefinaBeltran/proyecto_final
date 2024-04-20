@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*utilities*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
 h1::selection {
@@ -25,7 +26,7 @@ p::selection {
   color: #F7F7E8;
   background-color: #35585C; }
 
-/*bases*/
+/*base*/
 * {
   margin: 0;
   /* elimina el predeterminado de los navegadores, en este caso el margen */
@@ -239,6 +240,7 @@ body {
           text-align: center;
           margin: 15px; }
         .sobreNosotros .contenedorEquipo section .equipo p {
+          color: black;
           font-family: 'Montserrat';
           font-size: 14px;
           margin: 15px;
@@ -249,14 +251,14 @@ body {
           color: #F7F7E8;
           background-color: #35585C; }
         .sobreNosotros .contenedorEquipo section .equipo p::first-letter {
-          font-size: 1.5em;
-          font-weight: bold; }
+          font-size: 1.5em; }
       .sobreNosotros .contenedorEquipo section .imgEquipo {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 15px 10px 20px 10px; }
+        margin: 15px 10px 20px 10px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
         .sobreNosotros .contenedorEquipo section .imgEquipo img {
           width: 200px;
           height: 200px; }
@@ -276,9 +278,11 @@ body {
     justify-content: center;
     margin: 0px 0px 20px 0px; }
     .tituloServicios div h2 {
+      color: black;
       font-family: 'DM Serif Display', sans-serif;
       font-weight: lighter;
-      font-size: 30px; }
+      font-size: 25px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.205); }
 
 .contenedorServicio {
   display: flex;
@@ -339,11 +343,13 @@ body {
   align-items: center;
   justify-items: center; }
   .fechasNosotros h3 {
+    color: black;
     font-family: 'DM Serif Display', sans-serif;
     font-weight: lighter;
     font-size: 20px;
     margin: 18px; }
   .fechasNosotros p {
+    color: black;
     font-family: 'Montserrat';
     font-size: 15px;
     text-align: justify;
@@ -453,6 +459,7 @@ body {
       width: 50px;
       height: 40px; }
 
+/*mediaQuery*/
 /* Para dispositivos con pantallas pequeñas, como los teléfonos, en modo horizontal */
 @media (min-width: 375px) {
   /* Pagina inicio no necesita cambios */
@@ -487,7 +494,7 @@ body {
     margin-top: -100px; } }
 
 /* Tabletas de diez pulgadas, en modo vertica */
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
   /*header*/
   .header .navbar .container-fluid .logo {
     width: 180px;
@@ -545,6 +552,12 @@ body {
       font-size: 30px; }
     .sobreNosotros .contenedorEquipo section {
       height: 78vh; }
+  /*servicios*/
+  .contenedorServicio div {
+    flex-direction: row;
+    justify-content: space-around; }
+    .contenedorServicio div .servicio div img {
+      height: 33vh; }
   /* footer */
   .footer {
     flex-direction: row;
@@ -635,11 +648,24 @@ body {
   .sobreNosotros .banner .carousel h2 {
     font-size: 70px;
     margin-top: -160px; }
-  /*servicios*/
-  .contenedorServicio div {
-    flex-direction: row; }
-    .contenedorServicio div .servicio div img {
-      height: 33vh; }
+  .sobreNosotros .contenedorEquipo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px; }
+    .sobreNosotros .contenedorEquipo h2 {
+      font-size: 30px; }
+    .sobreNosotros .contenedorEquipo section {
+      display: flex;
+      flex-direction: row;
+      height: 50vh; }
+      .sobreNosotros .contenedorEquipo section .equipo {
+        width: 60%; }
+        .sobreNosotros .contenedorEquipo section .equipo h4 {
+          font-size: 25px; }
+        .sobreNosotros .contenedorEquipo section .equipo p {
+          font-size: 16px; }
+      .sobreNosotros .contenedorEquipo section .imgEquipo {
+        margin: 20px; }
   /* novedades */
   .contenedorFotos {
     display: flex;
@@ -648,11 +674,11 @@ body {
     .contenedorFotos div {
       display: flex;
       flex-direction: row;
-      width: 95%;
-      justify-content: space-evenly;
-      margin: 50px; }
+      width: 100%;
+      justify-content: space-around;
+      margin: 40px; }
       .contenedorFotos div img {
-        width: 150px;
+        width: 175px;
         height: 150px;
         object-fit: cover;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
@@ -702,19 +728,5 @@ body {
   .sobreNosotros .banner .carousel h2 {
     font-size: 80px;
     margin-top: -180px; }
-  .sobreNosotros .contenedorEquipo {
-    display: flex;
-    flex-direction: column; }
-    .sobreNosotros .contenedorEquipo h2 {
-      font-size: 30px; }
-    .sobreNosotros .contenedorEquipo section {
-      display: flex;
-      flex-direction: row; }
-      .sobreNosotros .contenedorEquipo section .equipo {
-        width: 60%; }
-        .sobreNosotros .contenedorEquipo section .equipo h4 {
-          font-size: 25px; }
-        .sobreNosotros .contenedorEquipo section .equipo p {
-          font-size: 16px; }
-      .sobreNosotros .contenedorEquipo section .imgEquipo {
-        margin: 20px; } }
+  .sobreNosotros .contenedorEquipo section {
+    height: 40vh; } }

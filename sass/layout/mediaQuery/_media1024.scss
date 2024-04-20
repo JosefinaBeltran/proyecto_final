@@ -97,7 +97,7 @@
             }
         }
     }
-    
+
     /*sobreNosotros*/
     .sobreNosotros {
         .banner {
@@ -108,21 +108,34 @@
                 }
             }
         }
-    }
-
-    /*servicios*/
-    .contenedorServicio {
-        div{
-            flex-direction: row;
-            .servicio {      
-                div {
-                    img{
-                        height: 33vh;
+    
+        .contenedorEquipo {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+            h2{
+                font-size: 30px;
+            }
+            section {
+                display: flex;
+                flex-direction: row;
+                height: 50vh;
+                .equipo {
+                    width: 60%;
+                    h4 {
+                        font-size: 25px;
                     }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+                .imgEquipo {
+                    margin: 20px;
                 }
             }
         }
     }
+
 
     /* novedades */
     .contenedorFotos {
@@ -132,11 +145,11 @@
         div {
             display: flex;
             flex-direction: row;
-            width: 95%;
-            justify-content: space-evenly;
-            margin: 50px;
+            width: 100%;
+            justify-content: space-around;
+            margin: 40px;
             img {
-                width: 150px;
+                width: 175px;
                 height: 150px;
                 object-fit: cover;
                 box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
