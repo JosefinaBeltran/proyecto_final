@@ -11,12 +11,9 @@
 }
 
 .fechasNosotros {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+    @include flex-center;   
+    flex-direction: column; 
     height: 380px;
-    align-items: center;
-    justify-items: center;
     h3 {
         color: map-get($texto, texto);
         font-family: 'DM Serif Display', sans-serif;

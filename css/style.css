@@ -18,7 +18,7 @@ h4::selection {
   color: #F7F7E8;
   background-color: #35585C; }
 
-h5::selection {
+h5::selection, .sectionTestIndex .contenedorTest .test p::selection {
   color: #F7F7E8;
   background-color: #35585C; }
 
@@ -102,10 +102,10 @@ body {
 
 .sectionServIndex {
   display: flex;
-  flex-direction: column;
   width: 100%;
   justify-items: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 20px; }
   .sectionServIndex h2 {
     color: black;
@@ -148,10 +148,10 @@ body {
 
 .sectionTestIndex {
   display: flex;
-  flex-direction: column;
   width: 100%;
   justify-items: center;
   align-items: center;
+  flex-direction: column;
   margin-top: 20px; }
   .sectionTestIndex h2 {
     color: black;
@@ -165,7 +165,7 @@ body {
     flex-direction: column;
     width: 100%;
     height: 115vh;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center; }
     .sectionTestIndex .contenedorTest .test {
       display: flex;
@@ -173,13 +173,14 @@ body {
       background-color: #9DAD7F;
       width: 270px;
       height: 200px;
-      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
-      .sectionTestIndex .contenedorTest .test h5 {
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+      justify-content: center; }
+      .sectionTestIndex .contenedorTest .test h5, .sectionTestIndex .contenedorTest .test p {
         color: black;
         font-family: 'Montserrat';
         font-style: italic;
         font-size: 15px;
-        margin: 15px; }
+        margin: 10px; }
       .sectionTestIndex .contenedorTest .test .estrellas {
         display: flex;
         flex-direction: row;
@@ -190,12 +191,8 @@ body {
           width: 100%;
           height: 13px; }
       .sectionTestIndex .contenedorTest .test p {
-        color: black;
-        font-family: 'Montserrat';
         font-size: 13px;
-        margin: 15px;
-        text-align: justify;
-        justify-self: center; }
+        text-align: justify; }
 
 .sobreNosotros {
   display: flex;
@@ -213,9 +210,10 @@ body {
       margin-left: 10px; }
   .sobreNosotros .contenedorEquipo {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    justify-items: center;
     align-items: center;
+    flex-direction: column;
     margin-bottom: 50px; }
     .sobreNosotros .contenedorEquipo h2 {
       color: black;
@@ -226,10 +224,11 @@ body {
       margin-bottom: 20px; }
     .sobreNosotros .contenedorEquipo section {
       display: flex;
+      width: 100%;
+      justify-items: center;
+      align-items: center;
       flex-direction: column;
-      background-color: #C7CFB7;
-      justify-content: center;
-      align-items: center; }
+      background-color: #C7CFB7; }
       .sobreNosotros .contenedorEquipo section .equipo {
         display: flex;
         flex-direction: column;
@@ -253,10 +252,6 @@ body {
         .sobreNosotros .contenedorEquipo section .equipo p::first-letter {
           font-size: 1.5em; }
       .sobreNosotros .contenedorEquipo section .imgEquipo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin: 15px 10px 20px 10px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
         .sobreNosotros .contenedorEquipo section .imgEquipo img {
@@ -265,8 +260,10 @@ body {
 
 .tituloServicios {
   display: flex;
-  flex-direction: column;
   width: 100%;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 30px; }
   .tituloServicios div {
     display: flex;
@@ -290,10 +287,10 @@ body {
   width: 100%; }
   .contenedorServicio div {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    justify-items: center;
     align-items: center;
-    justify-content: center; }
+    flex-direction: column; }
     .contenedorServicio div .servicio {
       display: flex;
       flex-direction: column;
@@ -337,11 +334,11 @@ body {
 
 .fechasNosotros {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  height: 380px;
+  justify-items: center;
   align-items: center;
-  justify-items: center; }
+  flex-direction: column;
+  height: 380px; }
   .fechasNosotros h3 {
     color: black;
     font-family: 'DM Serif Display', sans-serif;
@@ -361,20 +358,20 @@ body {
 
 .form {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  justify-content: center;
-  align-items: center; }
+  justify-items: center;
+  align-items: center;
+  flex-direction: column; }
   .form form {
     display: flex;
-    flex-direction: column;
     width: 100%;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
     height: 400px;
     background-color: #C7CFB7;
     margin: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
-    justify-content: center;
-    align-items: center; }
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
     .form form fieldset legend {
       text-align: center;
       font-weight: bold;
@@ -393,10 +390,10 @@ body {
 
 .infoContacto {
   display: flex;
-  flex-direction: column;
   width: 100%;
+  justify-items: center;
   align-items: center;
-  justify-content: center; }
+  flex-direction: column; }
   .infoContacto .mapa {
     display: flex;
     width: 220px;

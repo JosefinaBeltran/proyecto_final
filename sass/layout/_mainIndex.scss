@@ -10,11 +10,8 @@
 }
 
 .sectionServIndex {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    width: 100%;
-    justify-items: center;
-    align-items: center;
     margin-top: 20px;
     h2 {
         @include texto-h2;
@@ -60,11 +57,8 @@
 }
 
 .sectionTestIndex {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    width: 100%;
-    justify-items: center;
-    align-items: center;
     margin-top: 20px;
     h2 {
         @include texto-h2;
@@ -75,7 +69,7 @@
         flex-direction: column;
         width: 100%;
         height: 115vh;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         .test{
             display: flex;
@@ -84,12 +78,13 @@
             width: 270px;
             height: 200px;
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+            justify-content: center;
             h5{
                 color: map-get($texto, texto);
                 font-family: 'Montserrat';
                 font-style: italic;
                 font-size: 15px;
-                margin: 15px;
+                margin: 10px;
             }
             .estrellas {
                 display: flex;
@@ -103,12 +98,9 @@
                 }
             }
             p{
-                color: map-get($texto, texto);
-                font-family: 'Montserrat';
+                @extend h5;
                 font-size: 13px;
-                margin: 15px;
                 text-align: justify;
-                justify-self: center;
             }
         }
     }

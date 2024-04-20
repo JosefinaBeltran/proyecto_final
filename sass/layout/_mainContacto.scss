@@ -1,19 +1,13 @@
 .form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;   
+    flex-direction: column; 
     form {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        @include flex-center;   
+        flex-direction: column; 
         height: 400px;
         background-color: map-get($fondos, fondoSectionsInfo);
         margin: 10px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
-        justify-content: center;
-        align-items: center;
         fieldset {
             legend{
                 text-align: center;
@@ -41,11 +35,8 @@
 }
 
 .infoContacto {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;   
+    flex-direction: column; 
     .mapa {
         display: flex;
         width: 220px;
