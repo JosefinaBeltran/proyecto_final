@@ -45,14 +45,16 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    justify-content: center;
     .mapa {
+        display: flex;
         width: 220px;
         height: 220px;
         margin: 10px;
         iframe {
             width: 200px;
             height: 200px;
-            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); 
         }
     }
     section {
@@ -60,15 +62,17 @@
         flex-direction: column;
         width: 80%;
         align-items: center;
-        img {
-            width: 50px;
-            height: 45px;
-        }
-        p {
-            font-family: 'Montserrat';
-            font-size: 10px;
-            text-align: justify;
-            margin: 5px;
+        a{
+            img {
+                width: 50px;
+                height: 45px;
+            }
+            p {
+                font-family: 'Montserrat';
+                font-size: 10px;
+                text-align: justify;
+                margin: 5px;
+            }
         }
     }
 }
