@@ -407,14 +407,14 @@ body {
     display: flex;
     flex-direction: column;
     width: 80%;
-    align-items: center; }
+    align-items: center;
+    justify-content: center; }
     .infoContacto section a img {
       width: 50px;
       height: 45px; }
     .infoContacto section a p {
       font-family: 'Montserrat';
       font-size: 10px;
-      text-align: justify;
       margin: 5px; }
 
 .footer {
@@ -663,6 +663,9 @@ body {
           font-size: 16px; }
       .sobreNosotros .contenedorEquipo section .imgEquipo {
         margin: 20px; }
+  /*titulo de servicios, novedades,contacto*/
+  .tituloServicios div h2 {
+    font-size: 30px; }
   /* novedades */
   .contenedorFotos {
     display: flex;
@@ -682,20 +685,6 @@ body {
   /*contacto*/
   .form form {
     width: 40%; }
-  .infoContacto section {
-    flex-direction: row;
-    width: 90%;
-    align-items: center;
-    justify-content: center;
-    margin: 10px; }
-    .infoContacto section img {
-      width: 50px;
-      height: 45px; }
-    .infoContacto section p {
-      font-family: 'Montserrat';
-      font-size: 10px;
-      text-align: justify;
-      padding: 10px; }
   /*footer TODAS las paginas*/
   .footer {
     flex-direction: row;
@@ -726,4 +715,6 @@ body {
     font-size: 80px;
     margin-top: -180px; }
   .sobreNosotros .contenedorEquipo section {
-    height: 40vh; } }
+    height: 40vh; }
+  .contenedorServicio div .servicio div img {
+    height: 30vh; } }

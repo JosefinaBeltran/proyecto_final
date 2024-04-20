@@ -53,6 +53,7 @@
         flex-direction: column;
         width: 80%;
         align-items: center;
+        justify-content: center;
         a{
             img {
                 width: 50px;
@@ -61,7 +62,6 @@
             p {
                 font-family: 'Montserrat';
                 font-size: 10px;
-                text-align: justify;
                 margin: 5px;
             }
         }
