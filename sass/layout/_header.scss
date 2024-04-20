@@ -43,15 +43,17 @@
                     background-image: url(../assets/img/menu.png);
                 }
             }
-            .navbar-nav {
-                align-items: center;
-                .nav-item {
-                    .nav-link {
-                        color: #F7F7E8;
-                        text-decoration: none;
-                        font-family: 'DM Serif Display', sans-serif;
-                        font-size: 20px;    
-                    }  
+            .navbar-collapse{
+                .navbar-nav {
+                    align-items: center;
+                    .nav-item {
+                        .nav-link {
+                            color: #F7F7E8;
+                            text-decoration: none;
+                            font-family: 'DM Serif Display', sans-serif;
+                            font-size: 20px;    
+                        }  
+                    }
                 }
             }
         }

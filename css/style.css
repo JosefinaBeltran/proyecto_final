@@ -81,9 +81,9 @@ body {
         border-color: #F7F7E8; }
         .header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
           background-image: url(../assets/img/menu.png); }
-      .header .navbar .container-fluid .navbar-nav {
+      .header .navbar .container-fluid .navbar-collapse .navbar-nav {
         align-items: center; }
-        .header .navbar .container-fluid .navbar-nav .nav-item .nav-link {
+        .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
           color: #F7F7E8;
           text-decoration: none;
           font-family: 'DM Serif Display', sans-serif;
@@ -111,16 +111,15 @@ body {
     font-family: 'DM Serif Display', sans-serif;
     font-weight: lighter;
     font-size: 25px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.205); }
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.205);
+    margin-bottom: 20px; }
   .sectionServIndex .contenedorServ {
     display: flex;
     flex-direction: column;
     background-color: #C7CFB7;
     width: 100%;
-    height: 150vh;
     justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px; }
+    align-items: center; }
     .sectionServIndex .contenedorServ .serv {
       display: flex;
       flex-direction: column;
@@ -128,7 +127,8 @@ body {
       width: 200px;
       height: 200px;
       box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
-      align-items: center; }
+      align-items: center;
+      margin: 20px 0px 20px 0px; }
       .sectionServIndex .contenedorServ .serv div {
         display: flex;
         width: 100%;
@@ -152,6 +152,13 @@ body {
   justify-items: center;
   align-items: center;
   margin-top: 20px; }
+  .sectionTestIndex h2 {
+    color: black;
+    font-family: 'DM Serif Display', sans-serif;
+    font-weight: lighter;
+    font-size: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.205);
+    margin-bottom: 20px; }
   .sectionTestIndex .contenedorTest {
     display: flex;
     flex-direction: column;
@@ -200,21 +207,26 @@ body {
       font-family: 'DM Serif Display', sans-serif;
       font-weight: lighter;
       font-size: 25px;
-      text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.205);
       margin-top: -60px;
       margin-left: 10px; }
   .sobreNosotros .contenedorEquipo {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 130vh;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 50px; }
+    .sobreNosotros .contenedorEquipo h2 {
+      color: black;
+      font-family: 'DM Serif Display', sans-serif;
+      font-weight: lighter;
+      font-size: 25px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.205);
+      margin-bottom: 20px; }
     .sobreNosotros .contenedorEquipo section {
       display: flex;
       flex-direction: column;
       background-color: #C7CFB7;
-      height: 110vh;
-      margin-top: 5px;
       justify-content: center;
       align-items: center; }
       .sobreNosotros .contenedorEquipo section .equipo {
@@ -224,20 +236,22 @@ body {
         .sobreNosotros .contenedorEquipo section .equipo h4 {
           font-family: 'Montserrat';
           font-size: 20px;
-          text-align: center; }
+          text-align: center;
+          margin: 15px; }
         .sobreNosotros .contenedorEquipo section .equipo p {
           font-family: 'Montserrat';
           font-size: 14px;
-          margin: 20px;
+          margin: 15px;
           text-align: justify; }
-          .sobreNosotros .contenedorEquipo section .equipo p p::selection {
-            color: #F7F7E8;
-            background-color: #35585C; }
+        .sobreNosotros .contenedorEquipo section .equipo p::selection {
+          color: #F7F7E8;
+          background-color: #35585C; }
       .sobreNosotros .contenedorEquipo section .imgEquipo {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        margin: 15px 10px 20px 10px; }
         .sobreNosotros .contenedorEquipo section .imgEquipo img {
           width: 200px;
           height: 200px; }
@@ -269,15 +283,16 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-content: center;
+    align-items: center;
     justify-content: center; }
     .contenedorServicio div .servicio {
       display: flex;
       flex-direction: column;
       width: 300px;
       height: 400px;
+      margin: 15px;
       align-items: center;
-      margin: 15px; }
+      justify-content: center; }
       .contenedorServicio div .servicio div {
         width: 150px;
         height: 200px;
@@ -288,8 +303,8 @@ body {
           width: 100%;
           height: 100vh;
           object-fit: cover; }
-          .contenedorServicio div .servicio div img img:hover {
-            filter: grayscale(2); }
+        .contenedorServicio div .servicio div img:hover {
+          filter: grayscale(2); }
       .contenedorServicio div .servicio h4 {
         font-family: 'DM Serif Display', sans-serif;
         font-weight: lighter;
@@ -337,8 +352,8 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
-  justify-items: center; }
+  justify-content: center;
+  align-items: center; }
   .form form {
     display: flex;
     flex-direction: column;
@@ -346,7 +361,9 @@ body {
     height: 400px;
     background-color: #C7CFB7;
     margin: 10px;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+    justify-content: center;
+    align-items: center; }
     .form form fieldset legend {
       text-align: center;
       font-weight: bold;
@@ -434,10 +451,12 @@ body {
 @media (min-width: 375px) {
   /* Pagina inicio no necesita cambios */
   /* Pagina Sobre Nosotros */
-  .contenedorEquipo {
-    height: 120vh; }
-  .contenedorEquipo section {
-    height: 100vh; } }
+  .contenedorEquipo section .equipo {
+    /*no impacta esto en la página*/ }
+    .contenedorEquipo section .equipo h4 {
+      margin: 15px 10px 5px 10px; }
+    .contenedorEquipo section .equipo p {
+      margin: 10px; } }
 
 @media (min-width: 425px) {
   /* Pagina inicio no necesita cambios */
@@ -449,35 +468,37 @@ body {
 /* Tabletas pequeñas, en modo vertical */
 @media (min-width: 500px) {
   /* Pagina inicio no necesita cambios */
-  .carousel-item div h2 {
+  /*sobreNosotros*/
+  .sobreNosotros .banner .carousel h2 {
     font-size: 35px;
-    margin-top: -90px; }
-  .contenedorEquipo {
-    height: 105vh; }
-  .contenedorEquipo section {
-    height: 90vh; }
-  .equipo h4 {
-    font-size: 23px; } }
+    margin-top: -95px; } }
 
 @media (min-width: 600px) {
   /* Pagina inicio no necesita cambios */
-  .carousel-item div h2 {
-    font-size: 45px;
-    margin-top: -105px; } }
+  /*sobreNosotros*/
+  .sobreNosotros .banner .carousel h2 {
+    font-size: 40px;
+    margin-top: -100px; } }
 
 /* Tabletas de diez pulgadas, en modo vertica */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .navbar-collapse {
-    justify-content: flex-end; }
-  .carousel-item div h2 {
-    font-size: 60px;
-    margin-top: -140px; }
-  .contenedorEquipo {
-    height: 95vh; }
-  .contenedorEquipo section {
-    height: 78vh; }
-  /* servicios de la pagina inicial */
-  .contenedorServ {
+  /*header*/
+  .header .navbar .container-fluid .logo {
+    width: 180px;
+    height: 180px; }
+    .header .navbar .container-fluid .logo img {
+      width: 180px;
+      height: 180px; }
+    .header .navbar .container-fluid .logo div h1 {
+      font-size: 80px; }
+    .header .navbar .container-fluid .logo div h3 {
+      font-size: 15px; }
+  .header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item .nav-link {
+    font-size: 25px; }
+  /* serviciosIndex */
+  .sectionServIndex h2 {
+    font-size: 30px; }
+  .sectionServIndex .contenedorServ {
     display: grid;
     /* declaramos filas y columnas de grid, sino no funciona */
     grid-template-columns: repeat(2, 6fr);
@@ -485,55 +506,77 @@ body {
     grid-template-rows: repeat(2, 235px);
     /*infinitas*/
     grid-template-areas: "serv1 serv2" "serv3 serv4";
-    height: 90vh;
     align-content: center;
     justify-content: center;
     place-items: center;
     /* Centra tanto horizontal como verticalmente */ }
-  .serv#venta {
+  .sectionServIndex .serv#venta {
     grid-area: serv1; }
-  .serv#cria {
+  .sectionServIndex .serv#cria {
     grid-area: serv2; }
-  .serv#doma {
+  .sectionServIndex .serv#doma {
     grid-area: serv3; }
-  .serv#entrenamiento {
+  .sectionServIndex .serv#entrenamiento {
     grid-area: serv4; }
-  /* testimonios de la pagina inicial */
+  /* testIndex */
   .contenedorTest {
     height: 115vh; }
-  .test {
-    width: 600px;
-    height: 150px; }
-  .estrellas {
-    width: 15%; }
-  .estrellas img {
-    height: 15px; }
+    .contenedorTest .test {
+      width: 600px;
+      height: 150px; }
+      .contenedorTest .test .estrellas {
+        width: 15%; }
+        .contenedorTest .test .estrellas img {
+          height: 15px; }
+  /*sobreNosotros*/
+  .sobreNosotros .banner .carousel h2 {
+    font-size: 50px;
+    margin-top: -120px;
+    margin-left: 10px; }
+  .sobreNosotros .contenedorEquipo {
+    margin-bottom: 10px; }
+    .sobreNosotros .contenedorEquipo h2 {
+      font-size: 30px; }
+    .sobreNosotros .contenedorEquipo section {
+      height: 78vh; }
   /* footer */
   .footer {
     flex-direction: row;
     height: 40vh; }
-  .logoFooter {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    align-items: center; }
-  .logoPie div h1 {
-    font-size: 50px; }
-  .logoPie div h3 {
-    font-size: 15px; }
-  .footerRedes {
-    width: 60%;
-    justify-content: flex-end;
-    align-items: flex-start;
-    margin-right: 30px; } }
+    .footer .logoFooter {
+      display: flex;
+      flex-direction: column;
+      width: 40%;
+      align-items: center; }
+      .footer .logoFooter .logoPie div h1 {
+        font-size: 50px; }
+      .footer .logoFooter .logoPie div h3 {
+        font-size: 15px; }
+    .footer .footerRedes {
+      width: 60%;
+      justify-content: flex-end;
+      align-items: flex-start;
+      margin-right: 30px; } }
 
 /* Tabletas como el iPad (1024×768), en modo horizontal, así como algunas pantallas de ordenador portátil, netbook, y de escritorio */
 @media (min-width: 1024px) {
   /*header TODAS las paginas*/
-  .navbar-collapse {
-    justify-content: flex-end; }
+  .header {
+    /*solo se muestra bien en las paginas inicio y sobre nosotros*/ }
+    .header .navbar .container-fluid .logo {
+      width: 150px;
+      height: 150px; }
+      .header .navbar .container-fluid .logo img {
+        width: 150px;
+        height: 150px; }
+      .header .navbar .container-fluid .logo div h1 {
+        font-size: 60px; }
+      .header .navbar .container-fluid .logo div h3 {
+        font-size: 12px; }
+    .header .navbar .container-fluid .navbar-collapse {
+      justify-content: flex-end; }
   /*ServIndex*/
-  .contenedorServ {
+  .sectionServIndex .contenedorServ {
     display: grid;
     /* declaramos filas y columnas de grid, sino no funciona */
     grid-template-columns: repeat(2, 6fr);
@@ -541,29 +584,29 @@ body {
     grid-template-rows: repeat(2, 260px);
     /*infinitas*/
     grid-template-areas: "serv1 serv2" "serv3 serv4";
-    height: 100vh;
+    height: 85vh;
     row-gap: 20px;
     align-content: center;
     justify-content: center;
     place-items: center;
     /* Centra tanto horizontal como verticalmente */ }
-    .contenedorServ .serv {
+    .sectionServIndex .contenedorServ .serv {
       width: 250px;
       height: 250px; }
-      .contenedorServ .serv div {
+      .sectionServIndex .contenedorServ .serv div {
         display: flex;
         width: 100%;
         height: 200px; }
-    .contenedorServ .serv#venta {
+    .sectionServIndex .contenedorServ .serv#venta {
       grid-area: serv1; }
-    .contenedorServ .serv#cria {
+    .sectionServIndex .contenedorServ .serv#cria {
       grid-area: serv2; }
-    .contenedorServ .serv#doma {
+    .sectionServIndex .contenedorServ .serv#doma {
       grid-area: serv3; }
-    .contenedorServ .serv#entrenamiento {
+    .sectionServIndex .contenedorServ .serv#entrenamiento {
       grid-area: serv4; }
   /*TestIndex*/
-  .contenedorTest {
+  .sectionTestIndex .contenedorTest {
     display: grid;
     /* declaramos filas y columnas de grid, sino no funciona */
     grid-template-columns: repeat(3, 4fr);
@@ -571,17 +614,57 @@ body {
     grid-template-rows: repeat(1, 235px);
     /*infinitas*/
     grid-template-areas: "test1 test2 test3";
-    height: 45vh;
+    height: 35vh;
     align-content: center;
     justify-content: center;
     place-items: center;
     /* Centra tanto horizontal como verticalmente */ }
-    .contenedorTest .test#test1 {
+    .sectionTestIndex .contenedorTest .test#test1 {
       grid-area: test1; }
-    .contenedorTest .test#test2 {
+    .sectionTestIndex .contenedorTest .test#test2 {
       grid-area: test2; }
-    .contenedorTest .test#test3 {
+    .sectionTestIndex .contenedorTest .test#test3 {
       grid-area: test3; }
+  /*sobreNosotros*/
+  .sobreNosotros .banner .carousel h2 {
+    font-size: 70px;
+    margin-top: -160px; }
+  /*servicios*/
+  .contenedorServicio div {
+    flex-direction: row; }
+    .contenedorServicio div .servicio div img {
+      height: 33vh; }
+  /* novedades */
+  .contenedorFotos {
+    display: flex;
+    flex-direction: row;
+    width: 100%; }
+    .contenedorFotos div {
+      display: flex;
+      flex-direction: row;
+      width: 95%;
+      justify-content: space-evenly;
+      margin: 50px; }
+      .contenedorFotos div img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457); }
+  /*contacto*/
+  .form form {
+    width: 40%; }
+  .infoContacto section {
+    flex-direction: row;
+    width: 90%;
+    align-items: center; }
+    .infoContacto section img {
+      width: 50px;
+      height: 45px; }
+    .infoContacto section p {
+      font-family: 'Montserrat';
+      font-size: 10px;
+      text-align: justify;
+      padding: 10px; }
   /*footer TODAS las paginas*/
   .footer {
     flex-direction: row;
@@ -599,55 +682,31 @@ body {
       width: 60%;
       justify-content: flex-end;
       align-items: flex-start;
-      margin-right: 30px; }
-  /*SobreNosotros*/
-  .carousel-item div h2 {
-    font-size: 63px;
-    margin-top: -155px; }
-  .contenedorEquipo {
-    height: 85vh; }
-    .contenedorEquipo section {
-      height: 70vh; } }
+      margin-right: 30px; } }
 
 /* Para pantallas panorámicas, principalmente portátiles y de escritorio */
 @media (min-width: 1200px) {
-  /*header TODAS las paginas*/
-  .navbar-collapse {
-    justify-content: flex-end; }
-    .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
-      color: #35585C;
-      /*no me esta funcionando - averiguar con profes*/ }
-  .bannerIndex {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    z-index: 999;
-    /* esto lo puse para que el control del videos de novedades  no se superponga al indice */ }
-    .bannerIndex .carrousel-item {
-      width: 50%;
-      height: 30vh; }
-      .bannerIndex .carrousel-item img {
-        margin-top: 15px;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.438); }
-  h2 {
+  .sectionServIndex h2 {
     font-size: 30px; }
-  /*mainIndex*/
-  .carousel-item div h2 {
-    font-size: 63px;
-    margin-top: -155px; }
-  /*mainSobreNosotros*/
-  .contenedorEquipo {
-    height: 75vh; }
-    .contenedorEquipo section {
-      flex-direction: row;
-      height: 55vh; }
-      .contenedorEquipo section .equipo {
-        width: 60%;
-        margin: 40px; }
-        .contenedorEquipo section .equipo h4 {
+  .sectionTestIndex h2 {
+    font-size: 30px; }
+  /*sobreNosotros*/
+  .sobreNosotros .banner .carousel h2 {
+    font-size: 80px;
+    margin-top: -180px; }
+  .sobreNosotros .contenedorEquipo {
+    display: flex;
+    flex-direction: column; }
+    .sobreNosotros .contenedorEquipo h2 {
+      font-size: 30px; }
+    .sobreNosotros .contenedorEquipo section {
+      display: flex;
+      flex-direction: row; }
+      .sobreNosotros .contenedorEquipo section .equipo {
+        width: 60%; }
+        .sobreNosotros .contenedorEquipo section .equipo h4 {
           font-size: 25px; }
-      .contenedorEquipo section .imgEquipo {
-        width: 30%; }
-        .contenedorEquipo section .imgEquipo img {
-          width: 250px;
-          height: 250px; } }
+        .sobreNosotros .contenedorEquipo section .equipo p {
+          font-size: 16px; }
+      .sobreNosotros .contenedorEquipo section .imgEquipo {
+        margin: 20px; } }

@@ -1,20 +1,15 @@
 /* Tabletas pequeñas, en modo vertical */
 @media (min-width: 500px) {
     /* Pagina inicio no necesita cambios */
-    .carousel-item div h2{
-       font-size: 35px;
-       margin-top: -90px;
-    }
- 
-    .contenedorEquipo {
-       height: 105vh;
-    }
-    
-    .contenedorEquipo section {
-       height: 90vh;
-    }
-    
-    .equipo h4 {
-       font-size: 23px;
-    }
- }
+   /*sobreNosotros*/
+   .sobreNosotros {
+      .banner {
+         .carousel {
+            h2{
+               font-size: 35px;
+               margin-top: -95px;
+            }
+         }
+      }
+   }
+}
