@@ -2,13 +2,20 @@
     @include flex-center;   
     flex-direction: column; 
     form {
-        @include flex-center;   
-        flex-direction: column; 
-        height: 400px;
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-items: center;
+        align-items: center;   
         background-color: map-get($fondos, fondoSectionsInfo);
-        margin: 10px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.457);
+        border-radius: 5% 5% 5% 5%;
+        padding: 10px;
+        margin: 10px;
         fieldset {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;  
             legend{
                 text-align: center;
                 font-weight: bold;
@@ -16,19 +23,22 @@
             }
             label {
                 font-weight: bold;
-                margin: 5px;
             }
             input {
                 margin-left: 10px;
             }
-            input[type="number"] {
-                width: 110px;
-            }
-            input[type="submit"] {
-                margin: 15px 0px 10px 15px;
-            }
-            input[type="reset"] {
-                margin: 15px 0px 10px 15px;
+            div{
+                display: flex;
+                flex-direction: row;
+                margin: 20px 0px 10px 0px;
+                justify-content: center;
+                input{
+                    width: 80px;
+                    font-weight: bold;
+                    color: map-get($texto, textoClaro);
+                    border-color: map-get($colorObjeto, colorBoton);
+                    background-color: map-get($colorObjeto, colorBoton)
+                }
             }
         }
     }

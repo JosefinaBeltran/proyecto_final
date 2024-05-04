@@ -1,0 +1,42 @@
+
+@media (min-width: 900px){
+    .header{
+        .navbar{
+            .container-fluid{
+                .logo {
+                    width: 30%;
+                    height: 150px;
+                    a{
+                        img {
+                            width: 150px;
+                            height: 150px;
+                        }
+                    }
+                    div {
+                        h1 {
+                            font-size: 60px;
+                        }
+                        h3 {
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .navbar-collapse{
+                    width: 70%;
+                    justify-content: flex-end;
+                    .navbar-nav {
+                        .nav-item {
+                            .nav-link {
+                                font-size: 20px;    
+                            }  
+                        }
+                        .nav-item:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

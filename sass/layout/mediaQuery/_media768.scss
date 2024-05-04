@@ -5,11 +5,11 @@
       .navbar{
          .container-fluid{
             .logo {
-               width: 180px;
-               height: 180px;
+               width: 170px;
+               height: 170px;
                img {
-                  width: 180px;
-                  height: 180px;
+                  width: 170px;
+                  height: 170px;
                }
                div {
                   h1 {
@@ -40,7 +40,6 @@
          font-size: 30px;
       }
       .contenedorServ{
-         height: 90vh;
          display: grid;
          /* declaramos filas y columnas de grid, sino no funciona */
          grid-template-columns: repeat(2, 6fr); /*max son 12 columnas, fr es una medida llamada fraction*/
@@ -51,6 +50,7 @@
          align-content: center;
          justify-content: center;
          place-items: center; /* Centra tanto horizontal como verticalmente */
+         padding: 20px;
       }
       .serv#venta{
          grid-area: serv1;
@@ -69,7 +69,6 @@
 
    /* testIndex */
    .contenedorTest {
-      height: 115vh;
       .test{
          width: 600px;
          height: 150px;
@@ -109,20 +108,18 @@
       div{
          flex-direction: row;
          justify-content: space-around;
-         .servicio {      
-            div {
-               img{
-                  height: 33vh;
-               }
-            }
-         }
+      }
+   }
+
+   .form {
+      form {
+         width: 50%;
       }
    }
 
    /* footer */
    .footer{
       flex-direction: row;
-      height: 40vh;
       .logoFooter {
          display: flex;
          flex-direction: column;
@@ -144,6 +141,14 @@
          justify-content: flex-end;
          align-items:flex-start;
          margin-right: 30px;
+         div{
+            a{
+               img{
+                  width: 60px;
+                  height: 50px;
+               }
+            }
+         }
       }
    }
 }

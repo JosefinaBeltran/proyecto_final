@@ -10,7 +10,7 @@
             background-color: map-get($fondos, fondoHeaderFooter);
             .logo {
                 display: flex;
-                width: 150px;
+                width: 30%;
                 height: 150px;
                 align-items: center;
                 img {
@@ -44,6 +44,8 @@
                 }
             }
             .navbar-collapse{
+                width: 70%;
+                justify-content: flex-end;
                 .navbar-nav {
                     align-items: center;
                     .nav-item {
